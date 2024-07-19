@@ -8,10 +8,30 @@ body{
     background-color: white;
 }
 
+/* h1 style */
+.container_h1{
+    width: 100%;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.container_h1 h1{
+    padding-left: 40px;
+    font-family: cursive, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.container_h1 h1 span{
+    font-family: cursive, arial, sans-serif;
+    font-size: 20px;
+}
+
+
 /* Image style  */
 .img_404{
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +58,25 @@ body{
 }
 
 
+/* mobile style */
 
+@media only screen and (max-width: 500px) {
+    .container_h1{
+        text-align: center;
+        height: 3vh;
+    }
+    .container_h1 h1{
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        padding-top: 2px;
+    }
+    
+    .img_404 img{
+        width: 40%;
+        height: 30%;
+    }
+}
 
 
 
